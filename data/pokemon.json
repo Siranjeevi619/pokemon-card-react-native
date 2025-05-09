@@ -5,7 +5,15 @@
     "hp": 35,
     "attack": 55,
     "speed": 90,
-    "image": "https://img.pokemondb.net/artwork/large/pikachu.jpg"
+    "image": "https://img.pokemondb.net/sprites/home/normal/pikachu.png"
+  },
+  {
+    "name": "Bulbasaur",
+    "type": "Grass",
+    "hp": 45,
+    "attack": 49,
+    "speed": 45,
+    "image": "https://img.pokemondb.net/sprites/home/normal/bulbasaur.png"
   },
   {
     "name": "Charmander",
@@ -13,15 +21,7 @@
     "hp": 39,
     "attack": 52,
     "speed": 65,
-    "image": "https://img.pokemondb.net/artwork/large/charmander.jpg"
-  },
-  {
-    "name": "Bulbasaur",
-    "type": "Grass/Poison",
-    "hp": 45,
-    "attack": 49,
-    "speed": 45,
-    "image": "https://img.pokemondb.net/artwork/large/bulbasaur.jpg"
+    "image": "https://img.pokemondb.net/sprites/home/normal/charmander.png"
   },
   {
     "name": "Squirtle",
@@ -29,7 +29,47 @@
     "hp": 44,
     "attack": 48,
     "speed": 43,
-    "image": "https://img.pokemondb.net/artwork/large/squirtle.jpg"
+    "image": "https://img.pokemondb.net/sprites/home/normal/squirtle.png"
+  },
+  {
+    "name": "Jigglypuff",
+    "type": "Normal",
+    "hp": 115,
+    "attack": 45,
+    "speed": 20,
+    "image": "https://img.pokemondb.net/sprites/home/normal/jigglypuff.png"
+  },
+  {
+    "name": "Meowth",
+    "type": "Normal",
+    "hp": 40,
+    "attack": 45,
+    "speed": 90,
+    "image": "https://img.pokemondb.net/sprites/home/normal/meowth.png"
+  },
+  {
+    "name": "Psyduck",
+    "type": "Water",
+    "hp": 50,
+    "attack": 52,
+    "speed": 55,
+    "image": "https://img.pokemondb.net/sprites/home/normal/psyduck.png"
+  },
+  {
+    "name": "Machop",
+    "type": "Fighting",
+    "hp": 70,
+    "attack": 80,
+    "speed": 35,
+    "image": "https://img.pokemondb.net/sprites/home/normal/machop.png"
+  },
+  {
+    "name": "Gastly",
+    "type": "Ghost",
+    "hp": 30,
+    "attack": 35,
+    "speed": 80,
+    "image": "https://img.pokemondb.net/sprites/home/normal/gastly.png"
   },
   {
     "name": "Eevee",
@@ -37,6 +77,6 @@
     "hp": 55,
     "attack": 55,
     "speed": 55,
-    "image": "https://img.pokemondb.net/artwork/large/eevee.jpg"
+    "image": "https://img.pokemondb.net/sprites/home/normal/eevee.png"
   }
 ]

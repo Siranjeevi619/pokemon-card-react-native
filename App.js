@@ -1,12 +1,27 @@
-import { StatusBar } from "expo-status-bar";
-import { SafeAreaView, ScrollView, View } from "react-native";
+import React from "react";
+import {
+  SafeAreaView,
+  ScrollView,
+  StatusBar as RNStatusBar,
+  StyleSheet,
+} from "react-native";
 import Card from "./components/Card";
 import Pokemons from "./data/pokemon.json";
 
 export default function App() {
+  const statusBarHeight = RNStatusBar.currentHeight;
+
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: "#F7F7F7",
+      marginTop: statusBarHeight,
+    },
+  });
+
   return (
-    <SafeAreaView className="flex-1 bg-gray-100">
-      <StatusBar style="auto" />
+    <SafeAreaView style={styles.container}>
+      <RNStatusBar style="auto" />
       <ScrollView
         contentContainerStyle={{ alignItems: "center", paddingVertical: 20 }}
       >
