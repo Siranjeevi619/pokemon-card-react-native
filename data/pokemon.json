@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Pikachu",
+    "type": "Electric",
+    "hp": 35,
+    "attack": 55,
+    "speed": 90,
+    "image": "https://img.pokemondb.net/artwork/large/pikachu.jpg"
+  },
+  {
+    "name": "Charmander",
+    "type": "Fire",
+    "hp": 39,
+    "attack": 52,
+    "speed": 65,
+    "image": "https://img.pokemondb.net/artwork/large/charmander.jpg"
+  },
+  {
+    "name": "Bulbasaur",
+    "type": "Grass/Poison",
+    "hp": 45,
+    "attack": 49,
+    "speed": 45,
+    "image": "https://img.pokemondb.net/artwork/large/bulbasaur.jpg"
+  },
+  {
+    "name": "Squirtle",
+    "type": "Water",
+    "hp": 44,
+    "attack": 48,
+    "speed": 43,
+    "image": "https://img.pokemondb.net/artwork/large/squirtle.jpg"
+  },
+  {
+    "name": "Eevee",
+    "type": "Normal",
+    "hp": 55,
+    "attack": 55,
+    "speed": 55,
+    "image": "https://img.pokemondb.net/artwork/large/eevee.jpg"
+  }
+]
