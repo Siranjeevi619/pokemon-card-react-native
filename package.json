@@ -14,7 +14,8 @@
     "nativewind": "^2.0.11",
     "react": "19.0.0",
     "react-native": "0.79.2",
-    "react-native-svg": "^15.11.2"
+    "react-native-svg": "^15.11.2",
+    "tailwind-rn": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
