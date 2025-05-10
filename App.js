@@ -8,8 +8,8 @@ import {
 import Card from "./components/Card";
 import Pokemons from "./data/pokemon.json";
 import LoginPage from "./screens/login";
+import PokemonsList from "./screens/pokemonList";
 
 export default function App() {
-
-  return <LoginPage />;
+  return <PokemonsList />;
 }

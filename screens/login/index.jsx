@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, Button } from "react-native";
+import { View, Text, TextInput, Pressable } from "react-native";
 import { styled } from "nativewind";
 
 const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledTextInput = styled(TextInput);
-const StyledButton = styled(Button);
+const StyledPressable = styled(Pressable);
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -16,9 +16,9 @@ const LoginPage = () => {
   };
 
   return (
-    <StyledView className="p-5 justify-center flex-1 align-middle">
+    <StyledView className="p-5 justify-center flex-1">
       <StyledText className="mb-6 text-3xl font-sans font-bold text-center">
-        Login
+        Welcome Back
       </StyledText>
       <StyledView>
         <StyledTextInput
@@ -34,10 +34,16 @@ const LoginPage = () => {
           secureTextEntry
           className="border border-gray-300 rounded-lg p-2 mb-6"
         />
-        <StyledButton
-          title="Login"
-          className="w-32 py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-200"
-        />
+        <StyledView className="justify-center items-center flex">
+          <StyledPressable
+            onPress={handleLogin}
+            className="bg-blue-500 rounded-3xl w-24  px-4 py-2"
+          >
+            <StyledText className="text-white text-center text-ellipsis font-sans font-semibold">
+              Login
+            </StyledText>
+          </StyledPressable>
+        </StyledView>
       </StyledView>
     </StyledView>
   );
