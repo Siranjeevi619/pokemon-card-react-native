@@ -1,18 +1,36 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, Pressable } from "react-native";
 import { styled } from "nativewind";
+import { setShouldAnimateExitingForTag } from "react-native-reanimated/lib/typescript/core";
 
 const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledTextInput = styled(TextInput);
 const StyledPressable = styled(Pressable);
 
-const LoginPage = () => {
+const LoginPage = ({ navigation }) => {
   const [formData, setFormData] = useState({ email: "", password: "" });
+  const [errors, setErrors] = useState({});
+  const handleValidation = () => {
+    let error = {};
+    let valid = true;
+    if (formData.email === "") {
+      valid = false;
+      error.name = "email is missing";
+    }
+    if (formData.password === "") {
+      valid = false;
+      error.password = "password is missing";
+    }
+    setErrors(error);
+    return valid;
+  };
 
   const handleLogin = () => {
-    console.log("Email:", formData.email);
-    console.log("Password:", formData.password);
+    const isValid = handleValidation();
+    if (isValid) {
+      navigation.navigate("Pokemons");
+    }
   };
 
   return (
@@ -27,6 +45,11 @@ const LoginPage = () => {
           placeholder="Enter email"
           className="border border-gray-300 rounded-lg p-2 mb-4"
         />
+        {errors.email && (
+          <StyledText className="text-red-500 text-sm mb-4">
+            {errors.email}
+          </StyledText>
+        )}
         <StyledTextInput
           value={formData.password}
           onChangeText={(text) => setFormData({ ...formData, password: text })}
@@ -34,6 +57,11 @@ const LoginPage = () => {
           secureTextEntry
           className="border border-gray-300 rounded-lg p-2 mb-6"
         />
+        {errors.password && (
+          <StyledText className="text-red-500 text-sm mb-4">
+            {errors.password}
+          </StyledText>
+        )}
         <StyledView className="justify-center items-center flex">
           <StyledPressable
             onPress={handleLogin}
