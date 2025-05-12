@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, Pressable } from "react-native";
 import { styled } from "nativewind";
-import { setShouldAnimateExitingForTag } from "react-native-reanimated/lib/typescript/core";
 
 const StyledView = styled(View);
 const StyledText = styled(Text);

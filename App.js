@@ -1,6 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import LoginPage from "./screens/login";
-import PokemonsList from "./screens/pokemonList";
+import PokemonsList from "./screens/pokemons/pokemonList";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
